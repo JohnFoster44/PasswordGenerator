@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/645e55755d.js" crossorigin="anonymous"></script>
+    <!-- goog font -->
+    <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet"> 
+    <title>Password Generation</title>
+  </head>
+  <body>
+    <div class="container">
+
+      <h1>Password Generator</h1>
+
+      <div class="result-container">
+        <span id="result"></span>
+        <button class='btn' id="clipboard">
+            <i class="far fa-clipboard"></i>
+        </button>
+      </div>
+
+
+      <div class="settings">
+
+        <div class="setting">
+          <label>Password Length:</label>
+          8
+          <input class="slider" type="range" id="length" min="8" max="28" value="20" />
+          28
+        </div>
+
+        <div class="setting">
+          <label>Uppercase Letters</label>
+          <input type="checkbox" id="uppercase" />
+        </div>
+
+        <div class="setting">
+          <label>Lowercase Letters</label>
+          <input type="checkbox" id="lowercase" />
+        </div>
+
+        <div class="setting">
+          <label>Numbers</label>
+          <input type="checkbox" id="number" />
+        </div>
+
+        <div class="setting">
+          <label>Symbols</label>
+          <input type="checkbox" id="symbol" />
+        </div>
+
+        <button class=" btn btn-large" id="generate">Generate Password</button>
+
+      </div>
+    </div>
+    <p>Website: <a href="http://johnfoster44.com">John Foster</a></p>
+    <script src="main.js"></script>
+  </body>
+
+</html>
